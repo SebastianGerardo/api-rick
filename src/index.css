@@ -13,6 +13,8 @@ body {
 }
 
 .ttl {
+  max-width: 1200px;
+  margin: 0 auto;
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;

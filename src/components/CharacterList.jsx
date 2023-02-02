@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import { Character } from "./Character";
 
 function NavPage({ page, setPage }) {
+  const btn1 = document.getElementById("btn1")
+
   return (
     <header className="btns">
-      <button onClick={() => setPage(page - 1)}> {"<"} {page}</button>
-      <button onClick={() => setPage(page + 1)}> {page + 1} {">"}</button>
+      <button id="btn1" onClick={() => page === 1 ? page === setPage(42) : setPage(page - 1)}> {"<"} {page}</button>
+      <button onClick={() => page === 42 ? page === setPage(1) : setPage(page + 1)}> {page === 42 ? page - 41 : page + 1} {">"}</button>
     </header>
   );
 }
