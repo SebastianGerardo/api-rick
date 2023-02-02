@@ -16,11 +16,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 1.5rem;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
 }
 
-.ttl_rick:hover {
+.ttl:hover {
   color: #fff;
 }
 
@@ -28,11 +27,12 @@ body {
   display: inline-block;
   cursor: pointer;
   font-size: 4em;
-  transition: all .6s;
+  transition: all .3s;
 }
 
 .subttl_rick {
-  margin-left: 1em;
+  margin-left: 0.2em;
+  position: absolute;
   display: inline-block;
   cursor: pointer;
   font-size: 2em;
@@ -134,4 +134,17 @@ body {
 
 .character-box__info {
   width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .ttl {
+    flex-direction: column;
+  }
+  .subttl_rick {
+    margin: 0;
+    position: static;
+  }
+  .btns button {
+    margin: 0 1em 0 1em;
+  }
 }
