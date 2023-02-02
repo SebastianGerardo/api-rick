@@ -6,7 +6,10 @@ function App() {
 
   return (
     <div>
-      <h1>Rick and Morty</h1>
+      <div className="ttl">
+        <h1 className="ttl_rick">Rick and Morty</h1>
+        <h2 className="subttl_rick">API's</h2>
+      </div>
       <CharacterList />
     </div>
   );

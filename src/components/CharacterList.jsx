@@ -3,9 +3,9 @@ import { Character } from "./Character";
 
 function NavPage({ page, setPage }) {
   return (
-    <header>
-      <p>Page: {page}</p>
-      <button onClick={() => setPage(page + 1)}>Page{page + 1}</button>
+    <header className="btns">
+      <button onClick={() => setPage(page - 1)}> {"<"} {page}</button>
+      <button onClick={() => setPage(page + 1)}> {page + 1} {">"}</button>
     </header>
   );
 }
@@ -39,6 +39,7 @@ export function CharacterList() {
               <Character
                 key={character.id}
                 name={character.name}
+                origin={character.origin}
                 image={character.image}
               />
             </div>
